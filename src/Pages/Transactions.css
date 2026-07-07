@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.transaction-page {
+  min-height: 100vh;
+  background: #081313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.transaction-card {
+  width: 100%;
+  max-width: 700px;
+  background: #102121;
+  border: 1px solid rgba(23, 212, 194, 0.2);
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.transaction-card h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.transaction-card p {
+  color: #a9c5c5;
+  margin-bottom: 30px;
+}
+
+.transaction-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.transaction-card label {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.transaction-card input,
+.transaction-card select,
+.transaction-card textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #214343;
+  background: #081313;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.transaction-card input:focus,
+.transaction-card select:focus,
+.transaction-card textarea:focus {
+  border-color: #17d4c2;
+  box-shadow: 0 0 10px rgba(23, 212, 194, 0.25);
+}
+
+.transaction-card textarea {
+  resize: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn {
+  background: #17d4c2;
+  color: #081313;
+}
+
+.save-btn:hover {
+  background: #11b7a8;
+}
+
+.cancel-btn {
+  background: #2b3f3f;
+  color: #fff;
+}
+
+.cancel-btn:hover {
+  background: #3a5555;
+}
+
+@media (max-width: 768px) {
+  .transaction-card {
+    padding: 25px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+}

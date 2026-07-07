@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-page {
+  background: #081313;
+  min-height: 100vh;
+  padding: 30px;
+  color: #fff;
+}
+
+/* Header */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: #14b8a6;
+  font-size: 32px;
+}
+
+.edit-profile-btn {
+  background: #14b8a6;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.edit-profile-btn:hover {
+  background: #0f766e;
+}
+
+/* Layout */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 25px;
+}
+
+/* Left Card */
+
+.profile-card {
+  background: #111b1b;
+  border: 1px solid #14b8a6;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+}
+
+.profile-avatar {
+  font-size: 120px;
+  color: #14b8a6;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  margin-bottom: 5px;
+}
+
+.profile-card p {
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.upload-btn {
+  width: 100%;
+  background: #14b8a6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background: #0f766e;
+}
+
+/* Right */
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #111b1b;
+  border: 1px solid #14b8a6;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.card h2 {
+  color: #14b8a6;
+  margin-bottom: 20px;
+}
+
+/* Info */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ddd;
+}
+
+.info svg {
+  color: #14b8a6;
+}
+
+/* Inputs */
+
+.card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  background: #081313;
+  color: #fff;
+  border: 1px solid #14b8a6;
+  border-radius: 10px;
+  outline: none;
+}
+
+.card input::placeholder {
+  color: #9ca3af;
+}
+
+.card input:focus {
+  border-color: #22d3ee;
+}
+
+/* Save Button */
+
+.save-btn {
+  width: 100%;
+  background: #14b8a6;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.save-btn:hover {
+  background: #0f766e;
+}
+
+/* Settings */
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #1f3b3b;
+}
+
+.setting:last-child {
+  border-bottom: none;
+}
+
+.setting span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setting svg {
+  color: #14b8a6;
+}
+
+/* Checkbox */
+
+.setting input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #14b8a6;
+}
+
+/* Logout */
+
+.logout-btn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .edit-profile-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
