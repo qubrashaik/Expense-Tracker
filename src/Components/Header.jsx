@@ -64,7 +64,7 @@ const Header = () => {
         >
           <FaUserCircle className="profile-icon" />
           <div className="profile-info">
-            <h4>Qubra Shaik</h4>
+            <h4>Varun Konidina</h4>
             <small>Administrator</small>
           </div>
           <FaChevronDown />

@@ -57,18 +57,10 @@ const Dashboard = () => {
     <div className="dashboard">
       <section className="welcome-card">
         <div>
-          <h1>Welcome Back, Qubra 👋</h1>
+          <h1>Welcome Back, Varun 👋</h1>
 
           <p>Track every rupee, stay on budget and grow your savings.</p>
         </div>
-
-        <button
-          className="primary-btn"
-          onClick={() => navigate("/transaction")}
-        >
-          <FaPlus />
-          Add Transaction
-        </button>
       </section>
 
       <section className="s-cards">
@@ -120,19 +112,13 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
-
       <section className="quick-actions">
-        <button onClick={() => navigate("/expense")}>
+        <button className="action-btn" onClick={() => navigate("/transaction")}>
           <FaPlus />
-          Add Expense
+          Add Transaction
         </button>
 
-        <button onClick={() => navigate("/income")}>
-          <FaMoneyBillWave />
-          Add Income
-        </button>
-
-        <button onClick={() => navigate("/budget")}>
+        <button className="action-btn" onClick={() => navigate("/budget")}>
           <FaBullseye />
           Set Budget
         </button>

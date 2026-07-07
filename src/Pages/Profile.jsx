@@ -17,11 +17,11 @@ import {
 const Profile = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState({
-    name: "Qubra Shaik",
+    name: "Varun Konidina",
     profession: "Software Engineer",
-    email: "qubra@gmail.com",
-    phone: "+91 9876543210",
-    location: "Hyderabad, India",
+    email: "varun@gmail.com",
+    phone: "+91 9877894500",
+    location: "Chennai, India",
   });
   const [isEditing, setIsEditing] = useState(false);
   const [password, setPassword] = useState({

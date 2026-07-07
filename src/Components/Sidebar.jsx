@@ -26,9 +26,9 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="user-card">
-        <div className="avatar">Q</div>
+        <div className="avatar">V</div>
 
-        <h3>Qubra Shaik</h3>
+        <h3>Varun Konidina</h3>
 
         <p>Administrator</p>
       </div>
